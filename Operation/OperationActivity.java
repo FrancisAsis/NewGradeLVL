@@ -3,16 +3,12 @@ package Operation;
 public class OperationActivity {
 
     public static void main(String[] args) {
-        int x = 10;
-        int y = 12;
-
-        System.out.println(x + y); // 10 + 12
-        System.out.println(x++ + ++y);// 10 + 13
-        System.out.println(++x + y++);//12 + 13 
-        System.out.println(x++ + ++y);//12 + 15
-        System.out.println(x + y);// 13 + 15
-        System.out.println(x++ * y++); // 13
-        System.out.println(x + y);
-        
+        int x = 18;
+        int y = 7;
+            
+        System.out.println(++x * y++);   // Multiplication
+        System.out.println(x++ + ++y);   // Addition
+        System.out.println(++x / y++);   // Division
+        System.out.println(x++ - ++y);   // Subtraction
     }
 }
