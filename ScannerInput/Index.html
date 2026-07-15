@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Scanner in HTML</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 50px;
+        }
+        .input-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: inline-block;
+            width: 120px;
+        }
+        button {
+            margin-top: 10px;
+            padding: 5px 15px;
+            cursor: pointer;
+        }
+        #output {
+            margin-top: 20px;
+            font-weight: bold;
+            color: green;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>User Information Form</h2>
+
+    <div class="input-group">
+        <label for="nameInput">Enter your name:</label>
+        <input type="text" id="nameInput" placeholder="John Doe">
+    </div>
+
+    <div class="input-group">
+        <label for="ageInput">Enter your age:</label>
+        <input type="number" id="ageInput" placeholder="25">
+    </div>
+
+    <button onclick="displayInfo()">Submit</button>
+
+    <div id="output"></div>
+
+    <script>
+        function displayInfo() {
+            // 1. Grab the values from the input fields (Like scan.nextLine() and scan.nextInt())
+            const name = document.getElementById("nameInput").value;
+            const age = document.getElementById("ageInput").value;
+
+            // 2. Check if the user actually typed something
+            if (name === "" || age === "") {
+                document.getElementById("output").innerText = "Please fill out both fields!";
+                return;
+            }
+
+            // 3. Display the result (Like System.out.println)
+            document.getElementById("output").innerText = "Hello, " + name + "! You are " + age + " years old.";
+        }
+    </script>
+
+</body>
+</html>
