@@ -18,10 +18,8 @@ public class Variables {
     System.out.println("Section " + section);
     boolean regularStudent = true;
     System.out.println("Regular Student " + regularStudent); 
+    
 
-
-
-        
     }
 
 }
