@@ -31,12 +31,29 @@ public class MyCalculator {
         return remainder;
     }
 
-    //Avarageeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee
+    // BONUS Average
 
     public static double average(double a, double b) {
         double sum = (a + b) / 2;
         return sum;
 
+    }
+
+    // BONUS Max T F
+
+    public static double max(double a, double b) {
+        if (a > b) {
+            return a;
+        } else {
+            return b;
+        }
+    }
+
+    // BONUS Square
+
+    public static double square(double a) {
+        double square = a * a;
+        return square;
     }
 
     // Step 2: write your subtract, multiply, devide, and modolus method here
@@ -50,7 +67,9 @@ public class MyCalculator {
         System.out.println("[3] Multpilication");
         System.out.println("[4] Devision");
         System.out.println("[5] Modulus");
-        System.out.println("[6] avarage");
+        System.out.println("[6] Average");
+        System.out.println("[7] Max");
+        System.out.println("[8] Square");
     // Step 3  add menu lines add [2] to [5] here
         System.out.print("Choose an operation: ");
         int choice = input.nextInt();
@@ -85,8 +104,18 @@ public class MyCalculator {
             double result = remainder(num1, num2);
             System.out.println("Result " + result);
 
-        } else if () { 
-        
+        } else if (choice == 6) { // BONUS Avarage 
+            double result = average(num1, num2);
+            System.out.println("Result " + result);
+
+        } else if (choice == 7) { // BONUS Max
+            double result = max(num1, num2);
+            System.out.println("Result " + result);
+
+        } else if (choice == 8) { // BONUS Square
+            double result = square(num1);
+            System.out.println("Result " + result);
+
         } else {
             System.out.println("Invalid choice.");
         }
@@ -98,37 +127,3 @@ public class MyCalculator {
 
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
