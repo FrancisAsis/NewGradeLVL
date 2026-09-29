@@ -10,6 +10,10 @@ public class Javamethod {
         public static void main() {
         name();
 
+
+
+
+                
         }
 
 
