@@ -1,6 +1,6 @@
 package OOP;
 
-public class jeepney {
+public class Jeepney {
     String color;
     int capacity;
 
@@ -11,7 +11,7 @@ public class jeepney {
 
 public class main2 {
     public static void main(String[] args) {
-        jeepney myJeepney = new jeepney();
+        Jeepney myJeepney = new Jeepney();
         myJeepney.color = "Blue";
         myJeepney.capacity = 20;
         myJeepney.drive();
